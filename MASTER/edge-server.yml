@@ -11,7 +11,7 @@ zuul:
     request: true
   routes:
     card-service: 
-        path: /car-service/**
+        path: /card-service/**
         serviceId: card-service
         stripPrefix: false
     statement-service: 
