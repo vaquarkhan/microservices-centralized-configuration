@@ -19,6 +19,6 @@ zuul:
         serviceId: statement-service
         stripPrefix: false
     card-statement-composite:
-        path: /**
+        path: /card-statement-composite
         serviceId: card-statement-composite
         stripPrefix: false
