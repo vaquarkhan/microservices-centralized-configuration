@@ -13,12 +13,12 @@ zuul:
     card-service: 
         path: /card-service/**
         serviceId: card-service
-        stripPrefix: false
+        stripPrefix: true
     statement-service: 
         path: /statement-service/**
         serviceId: statement-service
-        stripPrefix: false
+        stripPrefix: true
     card-statement-composite:
-        path: /card-statement-composite
+        path: /card-statement-composite/**
         serviceId: card-statement-composite
-        stripPrefix: false
+        stripPrefix: true
