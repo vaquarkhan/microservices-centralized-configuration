@@ -1,10 +1,4 @@
 server:
   port: 8179
-  
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
 
 
