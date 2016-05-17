@@ -4,3 +4,15 @@ turbine:
   amqp:
     port: 8989
 
+---
+spring:
+  profiles: docker
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://registry:8761/eureka/
+
+server:
+  port: 8989
