@@ -22,3 +22,12 @@ zuul:
         path: /card-statement-composite/**
         serviceId: card-statement-composite
         stripPrefix: true
+---
+spring:
+  profiles: docker
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://registry:8761/eureka/
