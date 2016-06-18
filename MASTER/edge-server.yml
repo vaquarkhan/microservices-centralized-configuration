@@ -10,11 +10,11 @@ zuul:
   debug:
     request: true
   routes:
-    card-service: 
+    card-service:
         path: /card-service/**
         serviceId: card-service
         stripPrefix: true
-    statement-service: 
+    statement-service:
         path: /statement-service/**
         serviceId: statement-service
         stripPrefix: true
@@ -30,4 +30,4 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://registry:8761/eureka/
+      defaultZone: http://discovery-service:8761/eureka/
