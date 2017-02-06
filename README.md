@@ -57,3 +57,26 @@ Congratulations! You’ve just used Spring to centralize configuration for all y
 
 https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc
 
+
+-------------------------------------------------------------------------------------------------------------
+# SVN configuration
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: https://subversion.assembla.com/svn/spring-cloud-config-repo/
+        #git:
+        #  uri: https://github.com/pcf-guides/configuration-server-config-repo
+        default-label: trunk
+  profiles:
+    active: subversion
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
+Contact GitHub 
