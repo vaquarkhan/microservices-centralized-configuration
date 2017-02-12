@@ -91,3 +91,10 @@ levels:
         org.springframework.boot.env.PropertySourcesLoader: TRACE
     
        org.springframework.cloud.config.server: DEBUG
+       
+       
+       ----------------------------------------------------------------------------
+       
+       https://dzone.com/articles/spring-31-environment-profiles
+       
+       
